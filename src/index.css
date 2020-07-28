@@ -88,7 +88,30 @@
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#header .animated1 {
+  animation: up-down1 2s ease-in-out infinite alternate-reverse both;
+}
+
 @-webkit-keyframes up-down {
+  0% {
+  transform: translateY(-100px);
+}  
+  100% {
+  transform: translateY(100px);
+}
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-100px);
+  }  
+  100% {
+    transform: translateY(100px);
+  }
+ }
+
+
+ @-webkit-keyframes up-down1 {
   0% {
   transform: translateY(100px);
 }  
@@ -97,7 +120,7 @@
 }
 }
 
-@keyframes up-down {
+@keyframes up-down1 {
   0% {
     transform: translateY(100px);
   }  
